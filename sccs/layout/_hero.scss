@@ -1,0 +1,53 @@
+#hero {
+  background-image: url("../../assets/image/hero_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 790px;
+  padding-top: 296px;
+  border-radius: 0px 0px 30px 30px;
+
+  .wrapper {
+    position: relative;
+    h1 {
+      width: 800px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 130%;
+      color: #ffffff;
+      margin-bottom: -5px;
+    }
+    p {
+      width: 800px;
+      font-family: "Eurostile Extended";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 130%;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+    }
+
+    button {
+      position: absolute;
+      bottom: -330px;
+      left: 38%;
+      background-image: url("../../assets/icons/hero/Vector\ 2.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 19px 140px 10px 140px;
+      background-color: transparent;
+      border: none;
+      font-family: "Eurostile Extended";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: #000000;
+      z-index: 10;
+    }
+  }
+}

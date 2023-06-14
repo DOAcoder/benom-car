@@ -1,0 +1,149 @@
+
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background: transparent;
+ 
+
+  .nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 21px 0;
+
+    &__form {
+      display: flex;
+      align-items: center;
+      gap: 47px;
+
+      .select {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        color: #fff;
+        border: none;
+        background-color: transparent;
+        outline: none;
+
+        .op {
+          color: #000;
+        }
+      }
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      &--item {
+        list-style-type: none;
+
+        &-link {
+          text-decoration: none;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 130%;
+          letter-spacing: 0.02em;
+          color: #ffffff;
+          padding: 19px 51px;
+
+          &:hover {
+            background-color: #000;
+            color: #fff;
+          }
+        }
+        &-btn {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 130%;
+          letter-spacing: 0.09em;
+          color: #ffffff;
+          background: transparent;
+          border: none;
+          padding: 19px 51px;
+
+          &:hover {
+            background-color: #000;
+            color: #fff;
+          }
+        }
+
+        .social {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-bottom {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 273px;
+    height: 60px;
+    padding: 20px 0;
+    position: relative;
+
+    &::after{
+      content: "";
+      display: block;
+      width: 100vw;
+      border: 1px solid #fff;
+      position: absolute;
+      top: 0;
+      left: -290px;
+    }
+
+    &::before{
+      content: "";
+      display: block;
+      width: 100vw;
+      border: 1px solid #fff;
+      position: absolute;
+      bottom: 0;
+      left: -290px;
+    }
+
+    &__list {
+      display: flex;
+      column-gap: 40px;
+
+      &--item {
+        list-style-type: none;
+
+        &-link {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 130%;
+          letter-spacing: 0.09em;
+          color: #ffffff;
+
+          &:hover {
+            color: silver;
+          }
+        }
+      }
+    }
+  }
+}
